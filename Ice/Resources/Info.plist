@@ -2,9 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SUFeedURL</key>
-	<string>https://jordanbaird.github.io/ice-releases/appcast.xml</string>
-	<key>SUPublicEDKey</key>
-	<string>3nfIGMOD8DALPE8vIdFo2tUOIVc2MVbzhc+2J9JLn+Q=</string>
+	<!-- Upstream Sparkle feed removed in this fork so official Ice releases
+	     can never replace this build (auto-checks are also disabled in
+	     UpdatesManager). To re-enable updates against a feed you control,
+	     restore SUFeedURL + SUPublicEDKey. -->
+	<key>SUEnableAutomaticChecks</key>
+	<false/>
 </dict>
 </plist>
